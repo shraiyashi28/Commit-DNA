@@ -1,15 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import ResultPage from "./pages/Result";
+import ResultPage from "./pages/result"; // Check kijiye folder structure sahi hai
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/result" element={<ResultPage />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
